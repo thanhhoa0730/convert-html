@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test FE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./asset/css/style.css" />
+<script src="https://kit.fontawesome.com/2abaf33dc0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="asset/js/convert.js"></script>
+</head>
+  <body>
+    <div class="main">
+      <div class="header" id="myHeader">
+        <div class="nav container nav-desktop">
+          <div class="cl-logo">
+            <img src="./asset/images/logo.svg">
+          </div>
+          <div class="cl-list-item">
+            <ul class="cl-ul">
+              <li class="cl-li popoverP">Products<i class="far fa-chevron-down cl-down-arrow"></i>
+                <div class="cl-bg-container-pro">
+                  <span class="cl-sp-img"><img src="./asset/images/arrowpopover.svg"></span>
+                  <div class="cl-padding">
+                    <div class="cl-bg-a">
+                      <a class="cl-a" href="#">
+                        <div class="cl-chatkit"> 
+                          <img class="cl-w-img" src="./asset/images/chatkit.svg">
+                          <h3 class="cl-title-chatkit">chatkit</h3>                         
+                        </div>
+                        <div class="cl-p-fw">
+                          <p>Extensible API for in-app chat</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cl-bg-a">
+                      <a class="cl-a" href="#">
+                        <div class="cl-chatkit"> 
+                          <img class="cl-w-img" src="./asset/images/channel.svg">
+                          <h3 class="cl-title-chatkit">channels</h3>                         
+                        </div>
+                        <div class="cl-p-fw">
+                          <p>Build scalable realtime features</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cl-bg-a">
+                      <a class="cl-a" href="#">
+                        <div class="cl-chatkit"> 
+                          <img class="cl-w-img" src="./asset/images/beam.svg">
+                          <h3 class="cl-title-chatkit">beams</h3>                         
+                        </div>
+                        <div class="cl-p-fw">
+                          <p>Programmatic push notifications</p>
+                        </div>
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </li>
+              <li class="cl-li popoverD">Developers<i class="far fa-chevron-down cl-down-arrow"></i>
+                <div class="cl-bg-container-dev">
+                  <span class="cl-sp-img-dev"><img src="./asset/images/arrowpopover.svg"></span>
+                  <div class="cl-padding-dev">
+                    <div class="cl-bg-a">
+                      <a class="cl-a" href="#">
+                        <div class="cl-chatkit-dev"> 
+                          <h3 class="cl-title-chatkit-dev">Doc</h3>                         
+                        </div>
+                        <div class="cl-p-fw-dev">
+                          <p>Read the docs to learn how to use our products</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cl-bg-a">
+                      <a class="cl-a" href="#">
+                        <div class="cl-chatkit-dev">
+                          <h3 class="cl-title-chatkit-dev">Tutorials</h3>                         
+                        </div>
+                        <div class="cl-p-fw-dev">
+                          <p>Explore our tutorials to build apps with Pusher products</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cl-bg-a">
+                      <a class="cl-a" href="#">
+                        <div class="cl-chatkit-dev">
+                          <h3 class="cl-title-chatkit-dev">Support</h3>                         
+                        </div>
+                        <div class="cl-p-fw-dev">
+                          <p>Reach out to our support team for help and advice</p>
+                        </div>
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </li>
+              <li class="cl-li popoverC">Company<i class="far fa-chevron-down cl-down-arrow"></i>
+                <div class="cl-bg-container-comp">
+                    <span class="cl-sp-img-comp"><img src="./asset/images/arrowpopover.svg"></span>
+                    <div class="cl-padding-comp">
+                      <div class="cl-bg-a">
+                        <a class="cl-a" href="#">
+                            <div class="cl-chatkit-comp"> 
+                              <h3 class="cl-title-chatkit-comp">Customer stories</h3>                         
+                            </div>
+                            <div class="cl-p-fw-comp">
+                              <p>See how our customers use our products to delight their users</p>
+                            </div>
+                          </a>
+                      </div>
+                      <div class="cl-bg-a">
+                        <a class="cl-a" href="#">
+                          <div class="cl-chatkit-comp">
+                            <h3 class="cl-title-chatkit-comp">Careers</h3>                         
+                          </div>
+                          <div class="cl-p-fw-comp">
+                            <p>Look at our available jobs and join us on our mission</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="cl-bg-a">
+                        <a class="cl-a" href="#">
+                          <div class="cl-chatkit-comp">
+                            <h3 class="cl-title-chatkit-comp">Pusher Blog</h3>                         
+                          </div>
+                          <div class="cl-p-fw-comp">
+                            <p>Read our updates and opinions on realtime technology</p>
+                          </div>
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="cl-sign-in-up">
+            <div class="cl-s-in"><a href="https://dashboard.pusher.com/accounts/sign_in">Sign in</a></div>
+            <div class="cl-border-s-up">
+              <div class="cl-s-up">Sign up</div>
+            </div>
+          </div>
+        </div>
+        <!-- nav tablet mobile -->
+        <div class="nav container nav-mobile">
+          <div class="nav-mobile-gr">
+            <div class="cl-logo">
+              <img src="./asset/images/logo.svg">
+            </div>
+            <span class="cl-icon-menu">
+              <i class="far fa-bars test"></i>
+            </span>
+          </div>
+          <div class="cl-menu-popover">           
+            <div class="cl-li popoverP">
+              <div class="cl-gr-title-popover">
+                <h1>Products</h1>
+                <span class="cl-close"><i class="far fa-times"></i></span>
+              </div>
+              <div class="cl-bg-container-pro">
+                <div class="cl-padding">
+                  <div class="cl-bg-a">
+                    <a class="cl-a" href="#">
+                      <div class="cl-chatkit"> 
+                        <img class="cl-w-img" src="./asset/images/chatkit.svg">
+                        <h3 class="cl-title-chatkit">chatkit</h3>                         
+                      </div>
+                      <div class="cl-p-fw">
+                        <p>Extensible API for in-app chat</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cl-bg-a">
+                    <a class="cl-a" href="#">
+                      <div class="cl-chatkit"> 
+                        <img class="cl-w-img" src="./asset/images/channel.svg">
+                        <h3 class="cl-title-chatkit">channels</h3>                         
+                      </div>
+                      <div class="cl-p-fw">
+                        <p>Build scalable realtime features</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cl-bg-a">
+                    <a class="cl-a" href="#">
+                      <div class="cl-chatkit"> 
+                        <img class="cl-w-img" src="./asset/images/beam.svg">
+                        <h3 class="cl-title-chatkit">beams</h3>                         
+                      </div>
+                      <div class="cl-p-fw">
+                        <p>Programmatic push notifications</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <p>Docs</p>
+              <p>customers</p>
+              <p>Contact sales</p>
+              <div class="cl-div-btn">
+                <button type="submit" class="cl-btn-menu">Get your free account</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="header-banner">
+        <span class="cl-img-cloud"><img src="./asset/images/cloud.svg"></span>
+        <span class="cl-img-img01"><img src="./asset/images/img01.svg"></span>
+        <span class="cl-img-cloud02"><img src="./asset/images/cloud02.svg"></span>
+        <span class="cl-img-img03"><img src="./asset/images/img03.svg"></span>
+        <span class="cl-img-img02"><img src="./asset/images/img02.svg"></span>
+        <div class="container">
+          <div class="cl-description">
+            <h1 class="cl-des-h1">Powering realtime experiences in<br>all your apps</h1>
+          </div>
+          <div class="cl-text-under-des">
+            <h2 class="cl-des-h2">Hosted APIs that are flexible,<span class="cl-lesp">LESP</span> scalable, and easy to integrate</h2>
+          </div>
+          <div class="cl-gr-btn">
+            <button type="submit" class="cl-sign-up-free">Sign up for free</button><br>
+            <p><a class="cl-browse">Browse the docs</a></p>
+          </div>
+          
+        </div>
+      </div>
+     <div class="cl-body-Ourproducts">
+          <div class="container">
+          <h2 class="cl-h2">Our products</h2>
+          <div class="row">
+            <div class="column cl-col col-block-des"> 
+              <div class="cl-gr-img">
+                <span class="cl-bg-img">
+                  <img src="./asset/images/bg-chakit01.svg">
+                </span>
+                <div class="cl-gr-text">
+                  <img src="asset/images/chatkit.svg">
+                  <h1 class="cl-text-kit">chatkit</h1>
+                </div>
+                <div class="cl-gr-text-under">
+                  <p class="cl-text">Extensible API for in-app chat</p>
+                  <p class="cl-learn-more-p"><a class="cl-learn-more">Learn more</a></p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="column cl-col col-block-des">
+              <div class="cl-gr-img">
+                <span class="cl-bg-img ">
+                  <img src="./asset/images/bg-chakit02.svg">
+                </span>               
+                <div class="cl-gr-text">
+                    <img src="asset/images/channel.svg">
+                    <h1 class="cl-text-kit">channels</h1>
+                  </div>
+                  <div class="cl-gr-text-under">
+                    <p class="cl-text">Build scalable realtime features</p>
+                    <p class="cl-learn-more-p"><a class="cl-learn-more">Learn more</a></p>
+                  </div>
+              </div>
+            </div>
+            <div class="column cl-col col-block-des">
+              <div class="cl-gr-img">
+                <span class="cl-bg-img">
+                  <img src="./asset/images/bg-chakit03.svg">
+                </span>
+                <div class="cl-gr-text">
+                    <img src="asset/images/beam.svg">
+                    <h1 class="cl-text-kit">beams</h1>
+                  </div>
+                  <div class="cl-gr-text-under">
+                    <p class="cl-text">Programmatic push notifications</p>
+                    <p class="cl-learn-more-p"><a class="cl-learn-more">Learn more</a></p>
+                  </div>
+              </div>
+            </div>
+            <!-- mobile -->
+            <div class="column cl-col icon-ab-dot-mb">
+              <span class="cl-ic-dot"><img src="./asset/images/dot.svg"></span> 
+              <div class="cl-gr-img">
+                <span class="cl-bg-img">
+                  <img src="./asset/images/bg-chakit01.svg">
+                </span>
+                <div class="cl-gr-text">
+                  <img src="asset/images/chatkit.svg">
+                  <h1 class="cl-text-kit">chatkit</h1>
+                </div>
+                <div class="cl-gr-text-under">
+                  <p class="cl-text">Extensible API for in-app chat</p>
+                  <p class="cl-learn-more-p"><a class="cl-learn-more">Learn more</a></p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="column cl-col icon-ab-arrow-mb">
+              <span class="cl-up-arrow"><img src="./asset/images/uparrow.svg"></span>
+              <div class="cl-gr-img">
+                <span class="cl-bg-img ">
+                  <img src="./asset/images/bg-chakit02.svg">
+                </span>               
+                <div class="cl-gr-text">
+                    <img src="asset/images/channel.svg">
+                    <h1 class="cl-text-kit">channels</h1>
+                  </div>
+                  <div class="cl-gr-text-under">
+                    <p class="cl-text">Build scalable realtime features</p>
+                    <p class="cl-learn-more-p"><a class="cl-learn-more">Learn more</a></p>
+                  </div>
+              </div>
+            </div>
+            <div class="column cl-col icon-ab-flower-mb">
+                <span class="cl-ic-flower"><img src="./asset/images/flower.svg"></span>
+              <div class="cl-gr-img">
+                <span class="cl-bg-img">
+                  <img src="./asset/images/bg-chakit03.svg">
+                </span>
+                <div class="cl-gr-text">
+                    <img src="asset/images/beam.svg">
+                    <h1 class="cl-text-kit">beams</h1>
+                  </div>
+                  <div class="cl-gr-text-under">
+                    <p class="cl-text">Programmatic push notifications</p>
+                    <p class="cl-learn-more-p"><a class="cl-learn-more">Learn more</a></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cl-body-sdk-speed">
+        <div class="container">
+          <div class="cl-text">
+            <span>Pusher is the category leader in robust<br> APIs for app developers building 
+            scalable<br> realtime communication features</span>
+          </div>
+          <div class="cl-gr-icon">
+            <div class="cl-ic-sdks">
+              <img src="./asset/images/sdks.svg">
+              <p class="cl-p-one">40 + SDKS</p>
+              <p class="cl-p-two">Bring our APIs to any<br> tech stack.</p>
+            </div>
+            <div class="cl-ic-speed">
+              <img src="./asset/images/speed.svg">
+              <p class="cl-p-one">SPEEDY SUPPORT</p>
+              <p class="cl-p-two">Ready to answer any question,<br> whenever you need us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cl-we-need">
+        <span class="cl-up-arrow"><img src="./asset/images/uparrow.svg"></span>
+        <div class="container">
+          <div class="cl-tittle">
+            <h3 class="cl-h3">We have everything you need to get set up</h3>
+          </div>
+          <div class="cl-gr-card">
+            <div class="row">
+              <div class="column cl-col-card">
+                <div class="cl-col-frist cl-bg-col">
+                  <h2>docs</h2>
+                  <p class="cl-text-under">Full reference of our APIs</p>
+                  <p><a class="cl-learn-more-under">Learn more</a></p>
+                </div>
+              </div>
+              <div class="column cl-col-card">
+                <div class="cl-col-second cl-bg-col">
+                  <h2>Tutorials</h2>
+                  <p class="cl-text-under">Tutorials to help you get started</p>
+                  <p><a class="cl-learn-more-under">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cl-guardian">
+        <span class="cl-ic-dot"><img src="./asset/images/dot.svg"></span>
+        <div class="container">
+          <div class="cl-text-title">
+            <h1 class="cl-text-p">“We deal with students’ data, which comes with serious privacy requirements. 
+              We wouldn’t be able to do what we do without Pusher.”</h1>
+          </div>
+          <div class="gr-img-text">
+            <p class="cl-nick">Nick Tyler</p>
+            <p class="cl-p-nick">Director of Engineering, GoGuardian</p>
+            <span><img src="./asset/images/goguardian.svg"></span>
+          </div>
+        </div>
+        <span class="cl-ic-flower"><img src="./asset/images/flower.svg"></span>
+      </div>
+      <div class="cl-customer">
+        <div class="container">
+          <div class="cl-cool-custom">
+            <div class="cl-div-h1">
+              <h1>Cool Customers</h1>
+            </div>
+          </div>
+          <div class="cl-dev">
+            <h3 class="cl-dev-h3">250,000+ developers use Pusher to delight their users</h3>
+          </div>
+          <div class="cl-logo-descripstion">
+            <div class="row ">
+              <div class="column cl-col-logo"><img class="cl-w-h-img" src="./asset/images/vision.svg"></div>
+              <div class="column cl-col-logo"><img class="cl-w-h-img" src="./asset/images/financial.svg"></div>
+              <div class="column cl-col-logo"><img class="cl-w-h-img" src="./asset/images/github.svg"></div>
+              <div class="column cl-col-logo"><img class="cl-w-h-img" src="./asset/images/buffer.svg"></div>
+              <div class="column cl-col-logo"><img class="cl-w-h-img" src="./asset/images/datadog.svg"></div>
+              <div class="column cl-col-logo"><img class="cl-w-h-img" src="./asset/images/doordash.svg"></div>
+            </div>           
+          </div>
+        </div>
+      </div>
+      <div class="cl-dev-enter">
+        <div class="row">
+          <div class="column cl-col-dev-enter">
+            <div class="cl-gr-title container">
+              <p class="cl-title">Developes</p>
+              <div class="cl-pad">
+                <span class="cl-start-using">Start using our APIs<br>for free</span>
+              </div><br>
+              <button class="cl-button cl-hover-bO" type="submit">sign up for free</button>
+            </div>
+          </div>
+          <div class="column cl-col-dev-enter">
+            <div class="cl-gr-title container">
+              <p class="cl-title">Enterprise</p>
+              <div class="cl-pad">
+                <span class="cl-start-using">Grow your business with<br>Pusher Enterprise</span>
+              </div><br>
+              <button class="cl-button cl-hover-bS" type="submit">Contact sales</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container desktop">
+          <div class="cl-col-min">
+            <div class="row">
+              <div class="column cl-col-min-five">
+                <img class="cl-img-logo" src="./asset/images/logoWhite.svg">
+              </div>
+              <div class="column cl-col-min-five">
+                <p>Products</p>
+                <ul>
+                  <li>Channels</li>
+                  <li>Chatkit</li>
+                  <li>Beams</li>
+                </ul>
+              </div>
+              <div class="column cl-col-min-five">
+                <p>Developers</p>
+                <ul>
+                  <li>Docs</li>
+                  <li>Tutorials</li>
+                  <li>Status</li>
+                  <li>Support</li>
+                  <li>Sessions</li>
+                </ul>
+              </div>
+              <div class="column cl-col-min-five">
+                <p>Company</p>
+                <ul>
+                  <li>Contact Sales</li>
+                  <li>Customer stories</li>
+                  <li>Terms & Conditions</li>
+                  <li>Security</li>
+                  <li>Careers</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <div class="column cl-col-min-five">
+                <p>Connect</p>
+                <ul>
+                  <li>Twitter</li>
+                  <li>Medium</li>
+                  <li>YouTube</li>
+                  <li>LinkedIn</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cl-text-footer">
+            <p>© 2019  Pusher Ltd. All rights reserved.</p>
+            <p>Pusher Limited is a company registered in England and Wales (No. 07489873) 
+              whose registered office is at 
+              160 Old Street, London, EC1V 9BW.</p>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="container mobile">
+            <div class="column">
+              <img class="cl-img-logo" src="./asset/images/logoWhite.svg">
+            </div>
+            <div class="cl-col-min">
+              <div class="row row-mb">
+                <div class="column cl-col-min-five">
+                  <p>Products</p>
+                  <ul>
+                    <li>Channels</li>
+                    <li>Chatkit</li>
+                    <li>Beams</li>
+                  </ul>
+                </div>
+                <div class="column cl-col-min-five">
+                  <p>Developers</p>
+                  <ul>
+                    <li>Docs</li>
+                    <li>Tutorials</li>
+                    <li>Status</li>
+                    <li>Support</li>
+                    <li>Sessions</li>
+                  </ul>
+                </div>
+                <div class="column cl-col-min-five">
+                  <p>Company</p>
+                  <ul>
+                    <li>Contact Sales</li>
+                    <li>Customer stories</li>
+                    <li>Terms & Conditions</li>
+                    <li>Security</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                  </ul>
+                </div>
+                <div class="column cl-col-min-five">
+                  <p>Connect</p>
+                  <ul>
+                    <li>Twitter</li>
+                    <li>Medium</li>
+                    <li>YouTube</li>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="cl-text-footer">
+              <p>© 2019  Pusher Ltd. All rights reserved.</p>
+              <p>Pusher Limited is a company registered in England and Wales (No. 07489873) 
+                whose registered office is at 
+                160 Old Street, London, EC1V 9BW.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
