@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+@keyframes animateNav {
+  from {transform: translateY(-100%);}
+  to {transform: translateY(0);}
+}
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -9,15 +13,17 @@ body {
     margin: 0 150px;
   }
   .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px;
+    animation-name: animateNav;
+    animation-duration: 1s;
   }
   .header {
     background-color: #ffffff;
     z-index: 10;
+    top: 0px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px;
     .nav-mobile {
       display: none!important;
     }
@@ -49,7 +55,7 @@ body {
             font-size: 16px;
             cursor: pointer;
             .cl-bg-a:hover {
-              background-color: gray;
+              background-color: #e3e3e3a8;
             }          
             .cl-down-arrow {
               margin-left: 6px;
@@ -270,8 +276,9 @@ body {
   }
   .header-banner {
     padding: 60px 0;
-    background-color: #ffffff;
+    background-color: green;
     position: relative;
+    margin-top: 86px;
     .cl-img-cloud {
       position: absolute;
       top: 0;
@@ -883,11 +890,10 @@ body {
         .cl-icon-menu {
           font-size: 30px;
           transform: rotateZ(0deg);
-          transition: 0.5s;
-          &.active2 {
-            // transform: rotateZ(180deg);
-            transform: skewY(50deg);
-            transition: 0.5s ease-in-out;
+          transition: 0.2s;
+          &.activeMenu {
+            transform: skewY(45deg);
+            transition: 0.2s ease-in-out;
           }
         }
         .cl-menu-popover {
@@ -964,16 +970,17 @@ body {
             padding-right: 4px;
             
             transform: rotate(0);
-            transition: 0.2s
+            transition: 0.1s
           }
-          .cl-close.active {
+          .cl-close.activeClose {
             transform: rotate(45deg);
-            transition: 0.2s;
+            transition: 0.1s;
           }
         }
       }
     }
     .header-banner {
+      margin-top: 0;
       .cl-img-img01, .cl-img-cloud, .cl-img-img03, .cl-img-img02 {
         img {
           width: 80%;
@@ -1024,8 +1031,8 @@ body {
         }
       }
     }
-    .sticky {
-      position: unset!important;
+    .header {
+      position: unset !important;
     } 
   }
   @media only screen and (max-width: 576px) {
@@ -1040,6 +1047,11 @@ body {
       }
       .cl-img-cloud02 {
         top: 90%;
+      }
+      .container {
+        .cl-description .cl-des-h1 {
+          font-size: 40px;
+        }
       }
     }
     .cl-body-Ourproducts {
