@@ -3,12 +3,13 @@ $(document).ready(function(){
   var header = document.getElementById("myHeader");
   var sticky = header.offsetTop;
   function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-  }
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      console.log(window.pageYOffset)
+    } else {
+      header.classList.remove("sticky");
+    }
+  };
   $(".cl-icon-menu").click(function(){
     $(".cl-menu-popover").css("visibility","visible")
     $(".cl-close").addClass("active")
@@ -22,7 +23,13 @@ $(document).ready(function(){
     $(".cl-close").css("visibility","hidden")
     $(".cl-icon-menu").css("visibility","visible")
     $(".cl-icon-menu").removeClass("active2")
-    
   })
 });
-
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y >= 2300) {
+    $(document.getElementsByClassName('cl-logo-descripstion')).fadeIn();
+  } else {
+    $(document.getElementsByClassName('cl-logo-descripstion')).fadeOut();
+  }
+});
