@@ -825,6 +825,7 @@ body {
   padding: 60px 0px;
   background-color: #300D4F;
   position: relative;
+  margin: 60px 0px;
 }
 
 .main .cl-guardian .cl-ic-dot {
@@ -942,6 +943,10 @@ body {
 
 .main .cl-customer .container .cl-logo-descripstion .row .cl-col-logo .cl-w-h-img {
   width: 50%;
+}
+
+.main .cl-dev-enter {
+  margin-top: 60px;
 }
 
 .main .cl-dev-enter .row {
@@ -1149,8 +1154,8 @@ body {
     transition: 0.2s;
   }
   .main .header .nav-mobile .cl-icon-menu.activeMenu {
-    -webkit-transform: skewY(45deg);
-            transform: skewY(45deg);
+    -webkit-transform: skewY(90deg);
+            transform: skewY(90deg);
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
   }
@@ -1208,7 +1213,7 @@ body {
   }
   .main .header .nav-mobile .cl-menu-popover .cl-bg-container-pro .cl-padding {
     padding: 16px;
-    border: 1px solid gray;
+    border: 1px solid #cdcbcb;
     border-radius: 6px;
   }
   .main .header .nav-mobile .cl-menu-popover .cl-div-btn {
@@ -1301,6 +1306,12 @@ body {
   .main .header-banner .container .cl-description .cl-des-h1 {
     font-size: 40px;
   }
+  .main .header-banner .container .cl-text-under-des .cl-des-h2 {
+    font-size: 19px;
+  }
+  .main .cl-body-Ourproducts .cl-h2 {
+    font-size: 33px;
+  }
   .main .cl-body-Ourproducts .row .col-block-des {
     display: none;
   }
@@ -1349,6 +1360,13 @@ body {
   .main .cl-we-need .container .cl-gr-card .row .cl-col-card {
     width: 60%;
   }
+  .main .cl-we-need .container .cl-gr-card .row .cl-col-card .cl-bg-col h2 {
+    font-size: 23px;
+  }
+  .main .cl-we-need .container .cl-tittle {
+    padding: 0 15px;
+    font-size: 23px;
+  }
   .main .footer {
     padding: 30px 20px;
   }
@@ -1387,6 +1405,22 @@ body {
   .main .cl-guardian .gr-img-text .cl-p-nick {
     font-weight: none !important;
   }
+  .main .cl-dev-enter .row .cl-col-dev-enter .cl-gr-title .cl-pad {
+    padding: 25px 0;
+  }
+  .main .cl-dev-enter .row .cl-col-dev-enter .cl-gr-title .cl-pad .cl-start-using {
+    font-size: 23px;
+  }
+  .main .cl-body-sdk-speed .container .cl-text {
+    font-size: 19px;
+  }
+  .main .cl-body-sdk-speed .container .cl-gr-icon .cl-p-one {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .main .cl-customer .container .cl-dev .cl-dev-h3 {
+    font-size: 19px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1410,7 +1444,8 @@ body {
 
 @media only screen and (max-width: 320px) {
   .main .header-banner .cl-img-cloud02 {
-    top: 93%;
+    top: 90%;
+    right: -15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
