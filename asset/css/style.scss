@@ -16,7 +16,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px;
   }
   .header {
-    background-color: #c5c2c2;
+    background-color: #ffffff;
     z-index: 10;
     .nav-mobile {
       display: none!important;
@@ -205,7 +205,7 @@ body {
         align-items: center;
         font-size: 16px;
         font-weight: 700;
-        font-family: maison-neue,sans-serif;
+        
         .cl-s-in {
           position: relative;
           cursor: pointer;
@@ -270,7 +270,7 @@ body {
   }
   .header-banner {
     padding: 60px 0;
-    background-color: gray;
+    background-color: #ffffff;
     position: relative;
     .cl-img-cloud {
       position: absolute;
@@ -328,6 +328,7 @@ body {
         }
         .cl-lesp {
           border-style: dashed;
+          font-size: 14px;
         }
       }
       .cl-gr-btn {
@@ -430,7 +431,7 @@ body {
               color: #ffffff;
               margin: 0;
               font-size: 18px;
-              font-family: maison-neue,sans-serif;
+              
             }
             .cl-learn-more-p {
               margin: 0;
@@ -487,7 +488,7 @@ body {
         color: #ffffff;
         text-transform: uppercase;
         margin-left: 15px;
-        font-family: maison-neue,sans-serif;
+        
       }
       
     }
@@ -500,7 +501,7 @@ body {
         font-size: 28px;
         color: #300D4F;
         font-weight: 700;
-        font-family: maison-neue,sans-serif;
+        
       }
       .cl-gr-icon {
         text-align: center;
@@ -521,18 +522,16 @@ body {
           text-transform: uppercase;
           font-size: 38px;
           font-weight: 600;
-          font-family: italian-plate, sans-serif;
         }
         .cl-p-two {
           font-size: 16px;
-          font-family: maison-neue,sans-serif;
         }
       }
     }
   }
   .cl-we-need {
     padding: 60px 0px;
-    background-color: #dfdcdc;
+    background-color: #F4F4F4;
     position: relative;
     .cl-up-arrow {
       position: absolute;
@@ -547,7 +546,7 @@ body {
         .cl-h3 {
           max-width: 350px;
           font-size: 30px;
-          font-family: maison-neue,sans-serif;
+          
           color: #300D4F;
           text-align: center;
           font-weight: 700;
@@ -651,7 +650,7 @@ body {
     .gr-img-text {
       color: #ffffff;
       text-align: center;
-      .cl-nick, .cl-p-nick {
+      .cl-nick {
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
       }
@@ -731,7 +730,7 @@ body {
           color: #ffffff;
           .cl-start-using {
             font-size: 32px;
-            font-family: maison-neue,sans-serif;
+            
             font-weight: bold;
           }
           .cl-pad {
@@ -813,6 +812,11 @@ body {
       font-size: 14px;
     }
   }
+  @media only screen and (max-width: 1440px) {
+    .cl-body-Ourproducts .row {
+      padding: 0;
+    }
+  }
   @media only screen and (max-width: 1200px) {
     .header {
       .nav {
@@ -889,7 +893,6 @@ body {
         .cl-menu-popover {
           visibility: hidden;
           background-color: #ffffff;
-          width: auto;
           position: absolute;
           right: 0;
           top: 0;
@@ -1020,6 +1023,9 @@ body {
         width: 60%;
         }
       }
+    }
+    .sticky {
+      position: unset!important;
     } 
   }
   @media only screen and (max-width: 576px) {
@@ -1119,6 +1125,26 @@ body {
         }
       }
     }
+    .cl-customer {
+      padding: 60px 16px;
+      .container .cl-logo-descripstion .row .cl-col-logo {
+        width: calc((100% - 30px)/2);
+        .cl-w-h-img {
+          width: 80%;
+        }
+      }
+    }
+    .cl-guardian {
+      padding: 60px 16px;
+      .cl-text-title {
+        font-size: 10px;
+      }
+      .gr-img-text {
+        .cl-p-nick {
+          font-weight: none!important;
+        }
+      }
+    }
   }
   @media only screen and (max-width: 425px) {
     .cl-body-Ourproducts .row .cl-col {
@@ -1130,10 +1156,20 @@ body {
     }
     .cl-we-need .container .cl-gr-card .row .cl-col-card {
       width: 80%;
+      .cl-bg-col {
+        padding: 16px 40px;
+      }
     }
     .cl-body-sdk-speed {
       .cl-text {
         padding: 0 15px;
+      }
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .header-banner {
+      .cl-img-cloud02 {
+       top: 93%;
       }
     }
   }

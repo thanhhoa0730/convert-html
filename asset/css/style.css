@@ -22,7 +22,7 @@ body {
 }
 
 .main .header {
-  background-color: #c5c2c2;
+  background-color: #ffffff;
   z-index: 10;
 }
 
@@ -286,7 +286,6 @@ body {
           align-items: center;
   font-size: 16px;
   font-weight: 700;
-  font-family: maison-neue,sans-serif;
 }
 
 .main .header .nav .cl-sign-in-up .cl-s-in {
@@ -361,7 +360,7 @@ body {
 
 .main .header-banner {
   padding: 60px 0;
-  background-color: gray;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -438,6 +437,7 @@ body {
 
 .main .header-banner .container .cl-text-under-des .cl-lesp {
   border-style: dashed;
+  font-size: 14px;
 }
 
 .main .header-banner .container .cl-gr-btn {
@@ -568,7 +568,6 @@ body {
   color: #ffffff;
   margin: 0;
   font-size: 18px;
-  font-family: maison-neue,sans-serif;
 }
 
 .main .cl-body-Ourproducts .row .cl-col .cl-gr-img .cl-gr-text-under .cl-learn-more-p {
@@ -633,7 +632,6 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   margin-left: 15px;
-  font-family: maison-neue,sans-serif;
 }
 
 .main .cl-body-sdk-speed {
@@ -645,7 +643,6 @@ body {
   font-size: 28px;
   color: #300D4F;
   font-weight: 700;
-  font-family: maison-neue,sans-serif;
 }
 
 .main .cl-body-sdk-speed .container .cl-gr-icon {
@@ -676,17 +673,15 @@ body {
   text-transform: uppercase;
   font-size: 38px;
   font-weight: 600;
-  font-family: italian-plate, sans-serif;
 }
 
 .main .cl-body-sdk-speed .container .cl-gr-icon .cl-p-two {
   font-size: 16px;
-  font-family: maison-neue,sans-serif;
 }
 
 .main .cl-we-need {
   padding: 60px 0px;
-  background-color: #dfdcdc;
+  background-color: #F4F4F4;
   position: relative;
 }
 
@@ -709,7 +704,6 @@ body {
 .main .cl-we-need .container .cl-tittle .cl-h3 {
   max-width: 350px;
   font-size: 30px;
-  font-family: maison-neue,sans-serif;
   color: #300D4F;
   text-align: center;
   font-weight: 700;
@@ -840,7 +834,7 @@ body {
   text-align: center;
 }
 
-.main .cl-guardian .gr-img-text .cl-nick, .main .cl-guardian .gr-img-text .cl-p-nick {
+.main .cl-guardian .gr-img-text .cl-nick {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
@@ -953,7 +947,6 @@ body {
 
 .main .cl-dev-enter .row .cl-col-dev-enter .cl-gr-title .cl-start-using {
   font-size: 32px;
-  font-family: maison-neue,sans-serif;
   font-weight: bold;
 }
 
@@ -1052,6 +1045,12 @@ body {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .main .cl-body-Ourproducts .row {
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .main .header .nav .cl-list-item .cl-ul .cl-li {
     padding: 0 20px;
@@ -1132,7 +1131,6 @@ body {
   .main .header .nav-mobile .cl-menu-popover {
     visibility: hidden;
     background-color: #ffffff;
-    width: 340px;
     position: absolute;
     right: 0;
     top: 0;
@@ -1256,6 +1254,9 @@ body {
   .main .cl-body-Ourproducts .row .cl-col {
     width: 60%;
   }
+  .main .sticky {
+    position: unset !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1336,6 +1337,24 @@ body {
   .main .footer .mobile .cl-col-min-five {
     width: 50% !important;
   }
+  .main .cl-customer {
+    padding: 60px 16px;
+  }
+  .main .cl-customer .container .cl-logo-descripstion .row .cl-col-logo {
+    width: calc((100% - 30px)/2);
+  }
+  .main .cl-customer .container .cl-logo-descripstion .row .cl-col-logo .cl-w-h-img {
+    width: 80%;
+  }
+  .main .cl-guardian {
+    padding: 60px 16px;
+  }
+  .main .cl-guardian .cl-text-title {
+    font-size: 10px;
+  }
+  .main .cl-guardian .gr-img-text .cl-p-nick {
+    font-weight: none !important;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1349,8 +1368,17 @@ body {
   .main .cl-we-need .container .cl-gr-card .row .cl-col-card {
     width: 80%;
   }
+  .main .cl-we-need .container .cl-gr-card .row .cl-col-card .cl-bg-col {
+    padding: 16px 40px;
+  }
   .main .cl-body-sdk-speed .cl-text {
     padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main .header-banner .cl-img-cloud02 {
+    top: 93%;
   }
 }
 /*# sourceMappingURL=style.css.map */
