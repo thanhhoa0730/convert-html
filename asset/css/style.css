@@ -30,7 +30,8 @@ body {
 }
 
 .main .container {
-  margin: 0 150px;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .main .sticky {
@@ -248,6 +249,7 @@ body {
 }
 
 .main .header .nav .cl-list-item .cl-ul .cl-li .cl-bg-container-comp {
+  visibility: hidden;
   z-index: 6;
   background-color: #ffffff;
   position: absolute;
@@ -562,7 +564,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 90px;
 }
 
 .main .cl-body-Ourproducts .row .cl-col {
@@ -1125,6 +1126,9 @@ body {
   }
   .main .cl-we-need .container .cl-gr-card .row .cl-col-card {
     width: 50%;
+  }
+  .main .footer {
+    padding: 60px 20px;
   }
 }
 
