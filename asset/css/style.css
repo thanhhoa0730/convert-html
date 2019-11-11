@@ -1289,6 +1289,9 @@ body {
   .main .cl-we-need .container .cl-gr-card .row .cl-col-card .cl-bg-col .cl-text-under {
     font-size: 15px;
   }
+  .main .cl-body-Ourproducts .row {
+    padding: 0 90px;
+  }
   .main .cl-body-Ourproducts .row .cl-col {
     width: 60%;
   }
@@ -1315,6 +1318,9 @@ body {
   }
   .main .cl-body-Ourproducts .cl-h2 {
     font-size: 33px;
+  }
+  .main .cl-body-Ourproducts .row {
+    padding: 0;
   }
   .main .cl-body-Ourproducts .row .col-block-des {
     display: none;
