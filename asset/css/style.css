@@ -463,9 +463,31 @@ body {
   margin: 0;
 }
 
-.main .header-banner .container .cl-text-under-des .cl-lesp {
+.main .header-banner .container .cl-text-under-des .cl-des-h2 .cl-lesp {
   border-style: dashed;
-  font-size: 14px;
+  font-size: 12px;
+  padding: 0 16px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.main .header-banner .container .cl-text-under-des .cl-des-h2 .cl-lesp .cl-l {
+  position: absolute;
+  bottom: -1;
+  line-height: -2;
+  padding: 0 14px;
+  top: 0;
+  left: 0;
+}
+
+.main .header-banner .container .cl-text-under-des .cl-des-h2 .cl-sep {
+  position: absolute;
+  line-height: -2;
+  padding-top: -17px;
+  left: 0;
+  padding-left: 6px;
+  letter-spacing: 1px;
+  bottom: -1px;
 }
 
 .main .header-banner .container .cl-gr-btn {
